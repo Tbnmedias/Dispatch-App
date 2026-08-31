@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Used for Git-linked continuous deployment: Netlify runs this build on
+# every push. When you switch to CLI-only deploys later, this section is
+# simply ignored (you'll build locally instead), so no changes needed then.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
